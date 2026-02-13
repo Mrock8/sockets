@@ -1,7 +1,7 @@
 import socket
 
 # Cambia '127.0.0.1' por la IP de la máquina servidor si usas pfSense
-HOST = '127.0.0.1' 
+HOST = '192.168.31.24' 
 PORT = 5000
 
 
