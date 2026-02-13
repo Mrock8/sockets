@@ -36,11 +36,11 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         
         
         match op:
-            case 1:
+            case 0:
                 logoff()
-            case 2:
+            case 1:
                 threading.Thread(target=crear_pantalla_bloqueo).start()
-            case 3:
+            case 2:
                 if bloqueo:
                     bloqueo.quit() # Cierra la ventana y devuelve el control
             case _:
