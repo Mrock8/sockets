@@ -19,6 +19,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             data = conn.recv(1024) # Recibe hasta 1024 bytes
             if not data:
                 break
-            print(f">--: {data.decode('utf-8')}")
+            print(f"Respuesta del Cliente: {data.decode('utf-8')}")
             msj = input('Escribe un mensaje a tu cliente:')
             conn.sendall(msj.encode('utf-8'))
