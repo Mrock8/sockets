@@ -16,11 +16,13 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         
         op = respuesta.decode('utf-8')
         
-        match op:
+        
+        match int(op):
             case 1:
                 logoff()
             case _:
                 print('Opcion no definida')
+                break
         
         
         

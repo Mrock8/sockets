@@ -20,5 +20,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             
             print('Envia una Intruccion:')
             print('1) Logoff')
-            msj = int(input('>'))
+            msj = input('>')
             conn.sendall(msj.encode('utf-8'))
