@@ -19,6 +19,15 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             # Recibe hasta 1024 bytes
             
             print('Envia una Intruccion:')
-            print('1) Logoff')
+            print('0) PowerOff    1)Bloquear')
+            print('2) Desbloquear')
+            print('Escribe Salir para Cerrar el Programa')
+            
             msj = input('>')
+            
+            if msj.lower == 'salir':
+                break
+            
             conn.sendall(msj.encode('utf-8'))
+            
+            
