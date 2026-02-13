@@ -15,3 +15,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.sendall(mensaje.encode('utf-8'))
         respuesta = s.recv(1024)
         print(f"Respuesta del servidor: {respuesta.decode('utf-8')}")
+        print(f"_________________________________")
+        

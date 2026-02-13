@@ -20,5 +20,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             if not data:
                 break
             print(f"Respuesta del Cliente: {data.decode('utf-8')}")
+            print(f"_________________________________")
+            
             msj = input('Escribe un mensaje a tu cliente:')
             conn.sendall(msj.encode('utf-8'))
